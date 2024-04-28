@@ -52,11 +52,11 @@ function EmployerRegister() {
         </header>
         
         <div class="container">
-            <div class="login">
+            <div class="login1">
                 <div class="login-header">Employer Register</div>
                 <div class="login-input">
-                    <input
-                        type="text"
+                    <input 
+                        type="text" className='pass'
                         placeholder="Enter username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
@@ -71,11 +71,11 @@ function EmployerRegister() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <div class="login-button"><button onClick={handleRegister}>Register</button></div>
+                <div class="login-button"><button className='login'  onClick={handleRegister}>Register</button></div>
                 <span className='invalid'>{invalid}</span>
                 <hr/>
                 <span className='login-text'>Already have an account?</span>
-                <Link to='/employeelogin'><button className='register'>Login</button></Link>
+                <Link to='/employeelogin'><button className='login'>Login</button></Link>
             </div>
         </div>
       </>

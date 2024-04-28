@@ -14,6 +14,7 @@
     margin-right: 300px;
     width: 500px;
 }
+
 .jobs .sidebar {
     position: fixed;
     top: 100px;;
@@ -43,7 +44,7 @@
 }
 
 .jobs .container a {
-    width: 100px;
+    width: 110px;
     margin-left: 10px; 
     float: right;
     color: #529DCB ; 

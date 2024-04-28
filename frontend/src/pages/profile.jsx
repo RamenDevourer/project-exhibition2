@@ -148,13 +148,13 @@ function Profile() {
                         <input placeholder="Enter Work Experience1(leave blank if none)" value={workExp1} onChange={(e) => setWorkExp1(e.target.value)} />
                     </div>
                     <div className="profile-input">
-                        <input type='number' placeholder="Enter Work Experience Years1(leave blank if none)" value={workExpYears1} onChange={(e) => setWorkExpYears1(e.target.value)} />
+                        <input type='number' placeholder="Enter Work Experience Years1(Don't leave blank)" value={workExpYears1} onChange={(e) => setWorkExpYears1(e.target.value)} />
                     </div>
                     <div className="profile-input">
                         <input placeholder="Enter Work Experience2(leave blank if none)" value={workExp2} onChange={(e) => setWorkExp2(e.target.value)} />
                     </div>
                     <div className="profile-input">
-                        <input type='number' placeholder="Enter Work Experience Years2(leave blank if none)" value={workExpYears2} onChange={(e) => setWorkExpYears2(e.target.value)} />
+                        <input type='number' placeholder="Enter Work Experience Years2(Don't leave blank)" value={workExpYears2} onChange={(e) => setWorkExpYears2(e.target.value)} />
                     </div>
                     <div className="profile-input">
                         <input placeholder="Enter Academics/ Personal Projects " value={projects} onChange={(e) => setProjects(e.target.value)} />

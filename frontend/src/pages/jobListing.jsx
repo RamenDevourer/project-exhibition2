@@ -21,7 +21,7 @@ function JobListing(props) {
           <div className="details"></div>
           <div className="actions">
             <h3>₹{props.job.salary}</h3>
-            <a href={`/job/${props.username}/${props.job.employerUsername}`}>View details</a>
+            <a className='view'href={`/job/${props.username}/${props.job.employerUsername}`}>View details</a>
           </div>
         </div>
       </>

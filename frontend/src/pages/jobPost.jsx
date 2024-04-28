@@ -150,7 +150,7 @@ function JobPost() {
                         <input placeholder="Enter Skills" value={skills} onChange={(e) => setSkills(e.target.value)} />
                     </div>
                     <div className="profile-input">
-                        <textarea placeholder="Enter Additional Info From Employer" value={additionalInfoFromEmployer} onChange={(e) => setAdditionalInfoFromEmployer(e.target.value)} />
+                        <textarea  className='hello'placeholder="Enter Additional Info From Employer" value={additionalInfoFromEmployer} onChange={(e) => setAdditionalInfoFromEmployer(e.target.value)} />
                     </div>
                     <div className="profile-button">
                         <button onClick={handleSubmit}>Submit</button>

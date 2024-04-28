@@ -42,10 +42,10 @@ function EmployeeLogin() {
         </header>
         
         <div class="container">
-            <div class="login">
+            <div class="login1">
                 <div class="login-header">Employee Login</div>
                 <div class="login-input">
-                    <input
+                    <input className='pass'
                         type="text"
                         placeholder="Enter username"
                         value={username}
@@ -53,19 +53,18 @@ function EmployeeLogin() {
                     />
                 </div>
                 <div class="login-input">
-                    <input
-                        className='pass'
+                    <input className='pass'
                         type="password"
                         placeholder="Enter password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <div class="login-button"><button onClick={handleLogin}>Login</button></div>
+                <div class="login-button"><button className='login'  onClick={handleLogin}>Login</button></div>
                 <span className='invalid'>{invalid}</span>
                 <hr/>
                 <span className='login-text'>Don't have an account?</span>
-                <Link to='/employeeregister'><button className='register'>Register</button></Link>
+                <Link to='/employeeregister'><button className='login'>Register</button></Link>
             </div>
         </div>
       </>

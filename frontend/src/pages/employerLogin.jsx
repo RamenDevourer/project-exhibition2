@@ -42,10 +42,10 @@ function EmployerLogin() {
         </header>
         
         <div class="container">
-            <div className="login">
+            <div className="login1">
                 <div className="login-header">Employer Login</div>
                 <div className="login-input">
-                    <input
+                    <input className='pass'
                         type="text"
                         placeholder="Enter username"
                         value={username}
@@ -63,14 +63,14 @@ function EmployerLogin() {
                 </div>
                 {<div className="login-button">
                     {
-                        <button onClick={handleLogin}>Login</button>
+                        <button className='login' onClick={handleLogin}>Login</button>
                     }
                     </div> 
                 }
                 <span className='invalid'>{invalid}</span>
                 <hr/>
                 <span className='login-text'>Don't have an account?</span>
-                <Link to='/employerregister'><button className='register'>Register</button></Link>
+                <Link to='/employerregister'><button className='login'>Register</button></Link>
             </div>
         </div>
       </>
