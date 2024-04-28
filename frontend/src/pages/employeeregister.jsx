@@ -42,7 +42,7 @@ function EmployeeRegister() {
     
                 try {
                     console.log("username:",username);
-                    const profileRes = await axios.post(`http://localhost:5555/profile/`, {"profile": {"username": username}});
+                    const profileRes = await axios.post(`http://localhost:5555/profile/`, {"profile": {"username": username, "workExperienceYears1":0,"workExperienceYears2":0}});
                     console.log(profileRes);
                     navigate('/employeelogin');
                 } catch (profileError) {

@@ -24,7 +24,7 @@ function EmployerRegister() {
 
             try {
                 console.log("username:",username);
-                const profileRes = await axios.post(`http://localhost:5555/job/`, {"employerUsername": username});
+                const profileRes = await axios.post(`http://localhost:5555/job/`, {"employerUsername": username, "startDate": new Date(), "applyTill": new Date()});
                 console.log(profileRes);
                 navigate('/employerlogin');
             } catch (profileError) {
