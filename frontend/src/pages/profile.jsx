@@ -166,10 +166,10 @@ function Profile() {
                         <input placeholder="Enter Portfolio link(github/linkedIn if no separate portfolio website)" value={portfolioLink} onChange={(e) => setPortfolioLink(e.target.value)} />
                     </div>
                     <div className="profile-input">
-                        <input placeholder="Enter Accomplishments" value={accomplishments} onChange={(e) => setAccomplishments(e.target.value)} />
+                        <input className='accomplishment'placeholder="Enter Accomplishments" value={accomplishments} onChange={(e) => setAccomplishments(e.target.value)} />
                     </div>
                     <div className="profile-button">
-                        <button onClick={handleSubmit}>Submit</button>
+                        <button  className='submit'onClick={handleSubmit}>Submit</button>
                     </div>
                     <span className='invalid'>{invalid}</span>
                 </div>

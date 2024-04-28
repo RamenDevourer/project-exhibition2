@@ -101,7 +101,7 @@ function JobPost() {
                 <>
                 <div className="container">
                 <div className="profile">
-                    <div className="profile-header">Job Post</div>
+                    <div className="profile-header1">Job Post</div>
                     {/* Dropdown */}
                     <div className="profile-input">
                         <select className='dropbtn' value={jobPosition} onChange={(e) => setJobPosition(e.target.value)}>
@@ -147,17 +147,17 @@ function JobPost() {
                     </div>
 
                     <div className="profile-input">
-                        <input placeholder="Enter Skills" value={skills} onChange={(e) => setSkills(e.target.value)} />
+                        <input className='skills' placeholder="Enter Skills" value={skills} onChange={(e) => setSkills(e.target.value)} />
                     </div>
                     <div className="profile-input">
                         <textarea  className='hello'placeholder="Enter Additional Info From Employer" value={additionalInfoFromEmployer} onChange={(e) => setAdditionalInfoFromEmployer(e.target.value)} />
                     </div>
                     <div className="profile-button">
-                        <button onClick={handleSubmit}>Submit</button>
+                        <button className='submit1'onClick={handleSubmit}>Submit</button>
                     </div>
                     <span className='invalid'>{invalid}</span>
                     <div className="profile-button">
-                        <button onClick={handleRemove}>Remove Posting</button>
+                        <button className='submit1' onClick={handleRemove}>Remove Posting</button>
                     </div>
                 </div>
             </div>
