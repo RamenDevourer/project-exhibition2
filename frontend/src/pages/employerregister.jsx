@@ -75,7 +75,7 @@ function EmployerRegister() {
                 <span className='invalid'>{invalid}</span>
                 <hr/>
                 <span className='login-text'>Already have an account?</span>
-                <Link to='/employeelogin'><button className='login'>Login</button></Link>
+                <Link to='/employerlogin'><button className='login'>Login</button></Link>
             </div>
         </div>
       </>

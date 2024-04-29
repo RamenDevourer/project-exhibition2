@@ -56,7 +56,7 @@ function Job() {
                     <h3>Start Date: {job.startDate.slice(0,10)}</h3>
                     <h3>Apply Till: {job.applyTill.slice(0,10)}</h3>
                     <h3>Additional Info From Employer: {job.additionalInfoFromEmployer}</h3>
-                    <button onClick={handleApply} className='apply'>Apply</button>
+                    <button onClick={handleApply} className='apply' id='apply-button'>Apply</button>
                 </div>
             </div>
             </>
