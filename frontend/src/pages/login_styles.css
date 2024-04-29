@@ -11,7 +11,7 @@ header {
   }
 
   .login1{
-    background-color: #5d5d5d;
+    background-color: #e0e0e0;
     border-radius: 15px;
     padding: 40px;
     width: 50%;
@@ -20,6 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 8px 8px rgba(75, 75, 168, 0.2);
   
   }
   .login-header {
@@ -37,14 +38,14 @@ header {
     border-radius: 10px;
     width: 300px;
     color: rgb(247, 245, 245);
-    background-color: rgb(0, 0, 0);
+    background-color: #1e7bac;
   }
   .pass::placeholder {
     color: rgb(255, 255, 255);
   }
  
   .login1 .login,.login1.register {
-    background-color: rgb(27, 27, 27);
+    background-color: #1e7bac;
     color: white;
     margin-top: 20px;
     border: none;
@@ -54,10 +55,13 @@ header {
     font-family: Inter;
   }
   .login:hover {
-    background-color: hsl(0, 0%, 19%);
+    background-color: hsl(210, 36%, 62%);
     cursor: pointer;
   }
   
   .invalid{
     color: hsl(0, 80%, 60%);
+  }
+  .login-text{
+    margin-top: 10px;
   }
