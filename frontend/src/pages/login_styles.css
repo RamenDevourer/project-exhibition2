@@ -58,3 +58,6 @@ header {
     cursor: pointer;
   }
   
+  .invalid{
+    color: hsl(0, 80%, 60%);
+  }
