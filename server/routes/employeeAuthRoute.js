@@ -1,7 +1,7 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
 import {employees} from '../models/employees.js';
-import {Auth} from '../models/auth.js';
+// import {Auth} from '../models/auth.js';
 
 const router = express.Router();
 
@@ -51,23 +51,23 @@ router.post('/register', async(req, res) => {
     }
 })
 
-router.post('/token', async (req, res) => {
-    const refreshToken = req.body.token;
-    if (refreshToken == null){
-        return res.status(401).send({message : "Token not sent"});
-    }
-    const token = await Auth.findOne({"refreshToken" : refreshToken});
-    if (token == null){
-        return res.status(403).send({message : "token not in db"});
-    }
-    jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
-        if (err){
-            return res.status(403).send({message : "Invalid token"})
-        }
-        const accessToken = generateAccessToken({ name: user.name});
-        res.json({ accessToken: accessToken});
-    })
-})
+// router.post('/token', async (req, res) => {
+//     const refreshToken = req.body.token;
+//     if (refreshToken == null){
+//         return res.status(401).send({message : "Token not sent"});
+//     }
+//     const token = await Auth.findOne({"refreshToken" : refreshToken});
+//     if (token == null){
+//         return res.status(403).send({message : "token not in db"});
+//     }
+//     jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
+//         if (err){
+//             return res.status(403).send({message : "Invalid token"})
+//         }
+//         const accessToken = generateAccessToken({ name: user.name});
+//         res.json({ accessToken: accessToken});
+//     })
+// })
 
 function generateAccessToken(user) {
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1d' });

@@ -4,8 +4,8 @@ import express from 'express';
 import { PORT, mongoDBURL } from './config.js';
 import mongoose from 'mongoose';
 
-import {Auth} from './models/auth.js';
-import {users} from './models/users.js';
+// import {Auth} from './models/auth.js';
+// import {users} from './models/users.js';
 
 import employeeAuthRoute from './routes/employeeAuthRoute.js';
 import profileRoute from './routes/profileRoute.js';
