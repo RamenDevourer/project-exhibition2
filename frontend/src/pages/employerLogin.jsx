@@ -16,7 +16,7 @@ function EmployerLogin() {
         .post(`http://localhost:5555/employeeauth/login`, {"username" : username, "password" : password, "userType": "employer"})
         .then((res) => {
             setInvalid('');
-            navigate(`/`);
+            navigate(`/jobpost/${username}`);
             console.log(res);
             var token = res.data.accessToken;
             localStorage.setItem('accessToken', token);
