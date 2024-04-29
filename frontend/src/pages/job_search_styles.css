@@ -123,3 +123,15 @@ float: inline-end;
 .job .apply{
     background-color: #529DCB;
 }
+
+#apply-button {
+    width: 10rem;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#apply-button:hover{
+    background-color: #434444;
+}
