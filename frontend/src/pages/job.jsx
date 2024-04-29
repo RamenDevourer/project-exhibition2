@@ -52,7 +52,8 @@ function Job() {
                     <h2>Job position: {job.jobPosition}</h2>
                     <h3>City: {job.city}</h3>
                     <h3>Salary: {job.salary}</h3>
-                    <h3>Work Experience: {job.workExperience}</h3>
+                    <h3>Skills: {job.skills}</h3>
+                    <h3>Work Experience Required: {job.workExperience} years</h3>
                     <h3>Start Date: {job.startDate.slice(0,10)}</h3>
                     <h3>Apply Till: {job.applyTill.slice(0,10)}</h3>
                     <h3>Additional Info From Employer: {job.additionalInfoFromEmployer}</h3>
